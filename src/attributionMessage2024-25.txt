@@ -1,0 +1,54 @@
+Hernandez(TD1) A
+	texte : <#https://www.commentreparer.com/69279/Velo/Comment-reparer-la-resistance-sur-un-velo-d-appartement-PRO-form-225-CSX>
+Hernandez(TD1) B
+	texte : <#https://www.commentreparer.com/61464/Velo/Velo-d-appartement-casse>
+Hernandez(TD1) C
+	texte : <#https://www.commentreparer.com/29838/Velo/Remplacer-roue-libre-Velo-d-appartement-CARE-CV-5000>
+Hernandez(TD1) D
+	texte : <#https://www.commentreparer.com/65517/Velo/Velo-d-appartement-PROFORM-745-EKG>
+Hernandez(TD1) E
+	texte : <#https://www.commentreparer.com/52092/Velo/Velo-d-appartement-Striale-SV370-ecran-de-commande-HS>
+Hernandez(TD1) F
+	texte : <#https://www.commentreparer.com/56606/Velo/Cable-trop-court-ou-coince-velo-appartement-KETTLER>
+Hernandez(TD1) G
+	texte : <#https://www.commentreparer.com/69451/Velo/Velo-DOMYOS-VM430-ecran-bloque-sur-end>
+Hernandez(TD1) H
+	texte : <#https://www.commentreparer.com/68082/Velo/message-velo-Proform-power-sensitive-7-0-message-error-1>
+Hernandez(TD1) M
+	texte : <#https://www.commentreparer.com/53054/Velo/TACX-vortex-Smart-calibrage-impossible>
+HoDac(TD2) A
+	texte : <#https://www.commentreparer.com/22477/Velo/Velo-assistance-electrique-ELOPS-7e>
+HoDac(TD2) B
+	texte : <#https://www.commentreparer.com/52092/Velo/Velo-d-appartement-Striale-SV370-ecran-de-commande-HS>
+HoDac(TD2) C
+	texte : <#https://www.commentreparer.com/56687/Velo/VELO-Initialiser-computer-sur-velo-electr-MATRA-BION-X>
+HoDac(TD2) D
+	texte : <#https://www.commentreparer.com/69451/Velo/Velo-DOMYOS-VM430-ecran-bloque-sur-end>
+HoDac(TD2) E
+	texte : <#https://www.commentreparer.com/67215/Velo/velo-d-appartement-perte-de-resistance>
+HoDac(TD2) F
+	texte : <#https://www.commentreparer.com/56606/Velo/Cable-trop-court-ou-coince-velo-appartement-KETTLER>
+HoDac(TD2) G
+	texte : <#https://www.commentreparer.com/66638/Velo/velo-eliptique-proform-pas-de-resistance>
+HoDac(TD2) H
+	texte : <#https://www.commentreparer.com/73426/Velo/Ou-mettre-le-cable-pour-demarrer-velo-appart-kettler-cyclo-3>
+HoDac(TD2) M
+	texte : <#https://www.commentreparer.com/61464/Velo/Velo-d-appartement-casse>
+Tanguy(TD3) A
+	texte : <#https://www.commentreparer.com/22477/Velo/Velo-assistance-electrique-ELOPS-7e>
+Tanguy(TD3) B
+	texte : <#https://www.commentreparer.com/56687/Velo/VELO-Initialiser-computer-sur-velo-electr-MATRA-BION-X>
+Tanguy(TD3) C
+	texte : <#https://www.commentreparer.com/67215/Velo/velo-d-appartement-perte-de-resistance>
+Tanguy(TD3) D
+	texte : <#https://www.commentreparer.com/73121/Velo/Velo-pro-form-tdf-10-0>
+Tanguy(TD3) E
+	texte : <#https://www.commentreparer.com/73426/Velo/Ou-mettre-le-cable-pour-demarrer-velo-appart-kettler-cyclo-3>
+Tanguy(TD3) F
+	texte : <#https://www.commentreparer.com/61625/Velo/Sens-de-pedalage-inverse-Slide-Touch-Pro-form-6-0-velo>
+Tanguy(TD3) G
+	texte : <#https://www.commentreparer.com/53054/Velo/TACX-vortex-Smart-calibrage-impossible>
+Tanguy(TD3) H
+	texte : <#https://www.commentreparer.com/69279/Velo/Comment-reparer-la-resistance-sur-un-velo-d-appartement-PRO-form-225-CSX>
+Tanguy(TD3) M
+	texte : <#https://www.commentreparer.com/66638/Velo/velo-eliptique-proform-pas-de-resistance>
