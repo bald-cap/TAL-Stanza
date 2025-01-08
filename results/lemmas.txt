@@ -2,8 +2,7 @@
 	STANZA
 ---
 SENTENCE 1 - Bonjour,
-J'ai une vélo d'appartement STRIALE VPS 230-2,
-parfaitement fonctionnelle jusqu'au 10 avril courant.
+J'ai acheté un tacx vortex Smart 2014 d'un particulier et ce dernier fonctionnait à l'achat.
 ----
 ANALYSE 
 ----
@@ -12,168 +11,211 @@ ID   TEXT                LEMMA
 2    ,                   ,                   
 3    J'                  moi                 
 4    ai                  avoir               
-5    une                 un                  
-6    vélo                vélo                
-7    d'                  de                  
-8    appartement         appartement         
-9    STRIALE             STRIALE             
-10   VPS                 VPS                 
-11   230-2               230-2               
-12   ,                   ,                   
-13   parfaitement        parfaitement        
-14   fonctionnelle       fonctionnel         
-15   jusqu'              jusque              
-16   à                   à                   
-17   le                  le                  
-18   10                  10                  
-19   avril               avril               
-20   courant             courant             
+5    acheté              acheter             
+6    un                  un                  
+7    tacx                tacx                
+8    vortex              vortex              
+9    Smart               Smart               
+10   2014                2014                
+11   d'                  de                  
+12   un                  un                  
+13   particulier         particulier         
+14   et                  et                  
+15   ce                  ce                  
+16   dernier             dernier             
+17   fonctionnait        fonctionner         
+18   à                   à                   
+19   l'                  le                  
+20   achat               achat               
 21   .                   .                   
 
 -----------------------------------
 
-SENTENCE 2 - Quand l'embout d'alimentation, inséré dans la velo, a été accidentellement cassé / cissailler , le fil arraché, le tout en chargement sur secteur.
+SENTENCE 2 - Je l'ai installé chez moi et je n'arrive pas à faire le calibrage.
 ----
 ANALYSE 
 ----
 ID   TEXT                LEMMA               
-1    Quand               quand               
-2    l'                  le                  
-3    embout              embout              
-4    d'                  de                  
-5    alimentation        alimentation        
-6    ,                   ,                   
-7    inséré              insérer             
-8    dans                dans                
-9    la                  le                  
-10   velo                velo                
-11   ,                   ,                   
-12   a                   avoir               
-13   été                 être                
-14   accidentellement    accidentellement    
-15   cassé               cassé               
-16   /                   /                   
-17   cissailler          cissailler          
-18   ,                   ,                   
-19   le                  le                  
-20   fil                 fil                 
-21   arraché             arracher            
-22   ,                   ,                   
-23   le                  le                  
-24   tout                tout                
-25   en                  en                  
-26   chargement          chargement          
-27   sur                 sur                 
-28   secteur             secteur             
-29   .                   .                   
+1    Je                  moi                 
+2    l'                  lui                 
+3    ai                  avoir               
+4    installé            installer           
+5    chez                chez                
+6    moi                 moi                 
+7    et                  et                  
+8    je                  moi                 
+9    n'                  ne                  
+10   arrive              arriver             
+11   pas                 pas                 
+12   à                   à                   
+13   faire               faire               
+14   le                  le                  
+15   calibrage           calibrage           
+16   .                   .                   
 
 -----------------------------------
 
-SENTENCE 3 - L'utilisation d'un autre chargeur, n'a rien donné, la console est toujours éteinte.
+SENTENCE 3 - La résistance a bien été mise et la pression dans mon pneu ne dépasse pas 100psi.
 ----
 ANALYSE 
 ----
 ID   TEXT                LEMMA               
-1    L'                  le                  
-2    utilisation         utilisation         
-3    d'                  de                  
-4    un                  un                  
-5    autre               autre               
-6    chargeur            chargeur            
-7    ,                   ,                   
+1    La                  le                  
+2    résistance          résistance          
+3    a                   avoir               
+4    bien                bien                
+5    été                 être                
+6    mise                mettre              
+7    et                  et                  
+8    la                  le                  
+9    pression            pression            
+10   dans                dans                
+11   mon                 son                 
+12   pneu                pneu                
+13   ne                  ne                  
+14   dépasse             dépasser            
+15   pas                 pas                 
+16   100psi              100psi              
+17   .                   .                   
+
+-----------------------------------
+
+SENTENCE 4 - J'ai connecté le Smart trainer et la lumière verte clignote.
+----
+ANALYSE 
+----
+ID   TEXT                LEMMA               
+1    J'                  moi                 
+2    ai                  avoir               
+3    connecté            connecter           
+4    le                  le                  
+5    Smart               Smart               
+6    trainer             trainer             
+7    et                  et                  
+8    la                  le                  
+9    lumière             lumière             
+10   verte               vert                
+11   clignote            clignoter           
+12   .                   .                   
+
+-----------------------------------
+
+SENTENCE 5 - J'ai installé l'application tacx et elle reconnait mon smart trainer par Bluetooth.
+----
+ANALYSE 
+----
+ID   TEXT                LEMMA               
+1    J'                  moi                 
+2    ai                  avoir               
+3    installé            installer           
+4    l'                  le                  
+5    application         application         
+6    tacx                tacx                
+7    et                  et                  
+8    elle                lui                 
+9    reconnait           reconnaître         
+10   mon                 son                 
+11   smart               smart               
+12   trainer             trainer             
+13   par                 par                 
+14   Bluetooth           Bluetooth           
+15   .                   .                   
+
+-----------------------------------
+
+SENTENCE 6 - Mais lorsque je pédale, la vitesse n'apparaît pas.
+----
+ANALYSE 
+----
+ID   TEXT                LEMMA               
+1    Mais                mais                
+2    lorsque             lorsque             
+3    je                  moi                 
+4    pédale              pédaler             
+5    ,                   ,                   
+6    la                  le                  
+7    vitesse             vitesse             
 8    n'                  ne                  
-9    a                   avoir               
-10   rien                rien                
-11   donné               donner              
-12   ,                   ,                   
-13   la                  le                  
-14   console             console             
-15   est                 être                
-16   toujours            toujours            
-17   éteinte             éteindre            
-18   .                   .                   
-
------------------------------------
-
-SENTENCE 4 - Le chargeur original à pour output: 6v 500mA 3VA , l'autre 6v 500mA, mais sans mention de 3VA.
-----
-ANALYSE 
-----
-ID   TEXT                LEMMA               
-1    Le                  le                  
-2    chargeur            chargeur            
-3    original            original            
-4    à                   à                   
-5    pour                pour                
-6    output              output              
-7    :                   :                   
-8    6v                  6v                  
-9    500mA               500mA               
-10   3VA                 3VA                 
-11   ,                   ,                   
-12   l'                  le                  
-13   autre               autre               
-14   6v                  6v                  
-15   500mA               500mA               
-16   ,                   ,                   
-17   mais                mais                
-18   sans                sans                
-19   mention             mention             
-20   de                  de                  
-21   3VA                 3VA                 
-22   .                   .                   
-
------------------------------------
-
-SENTENCE 5 - Cette dernière manoeuvre était le maximum des mes compétences.
-----
-ANALYSE 
-----
-ID   TEXT                LEMMA               
-1    Cette               ce                  
-2    dernière            dernier             
-3    manoeuvre           manoeuvre           
-4    était               être                
-5    le                  le                  
-6    maximum             maximum             
-7    de                  de                  
-8    les                 le                  
-9    mes                 son                 
-10   compétences         compétence          
+9    apparaît            apparaître          
+10   pas                 pas                 
 11   .                   .                   
 
 -----------------------------------
 
-SENTENCE 6 - Un conseil, une orientation me serait très utile.
+SENTENCE 7 - J'ai essayer de faire le calibrage mais lorsque je pédale, le trainer ne le reconnait pas.
 ----
 ANALYSE 
 ----
 ID   TEXT                LEMMA               
-1    Un                  un                  
-2    conseil             conseil             
-3    ,                   ,                   
-4    une                 un                  
-5    orientation         orientation         
-6    me                  moi                 
-7    serait              être                
-8    très                très                
-9    utile               utile               
-10   .                   .                   
+1    J'                  moi                 
+2    ai                  avoir               
+3    essayer             essayer             
+4    de                  de                  
+5    faire               faire               
+6    le                  le                  
+7    calibrage           calibrage           
+8    mais                mais                
+9    lorsque             lorsque             
+10   je                  moi                 
+11   pédale              pédaler             
+12   ,                   ,                   
+13   le                  le                  
+14   trainer             trainer             
+15   ne                  ne                  
+16   le                  lui                 
+17   reconnait           reconnaître         
+18   pas                 pas                 
+19   .                   .                   
 
 -----------------------------------
 
-SENTENCE 7 - Vous remercie par avance
-V M
+SENTENCE 8 - J'ai essayé l'application sur iPad, iphone, Mac et sur téléphone Android.
 ----
 ANALYSE 
 ----
 ID   TEXT                LEMMA               
-1    Vous                vous                
-2    remercie            remercier           
-3    par                 par                 
-4    avance              avance              
-5    V                   V                   
-6    M                   M                   
+1    J'                  moi                 
+2    ai                  avoir               
+3    essayé              essayer             
+4    l'                  le                  
+5    application         application         
+6    sur                 sur                 
+7    iPad                iPad                
+8    ,                   ,                   
+9    iphone              iphone              
+10   ,                   ,                   
+11   Mac                 Mac                 
+12   et                  et                  
+13   sur                 sur                 
+14   téléphone           téléphone           
+15   Android             Android             
+16   .                   .                   
 
 -----------------------------------
 
+SENTENCE 9 - Je ne sais plus quoi essayer.
+----
+ANALYSE 
+----
+ID   TEXT                LEMMA               
+1    Je                  moi                 
+2    ne                  ne                  
+3    sais                savoir              
+4    plus                plus                
+5    quoi                quoi                
+6    essayer             essayer             
+7    .                   .                   
+
+-----------------------------------
+
+SENTENCE 10 - Merci énormément !!
+----
+ANALYSE 
+----
+ID   TEXT                LEMMA               
+1    Merci               merci               
+2    énormément          énormément          
+3    !                   !                   
+4    !                   !                   
+
+-----------------------------------

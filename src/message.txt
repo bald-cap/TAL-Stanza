@@ -1,7 +1,8 @@
 Bonjour,
-J'ai une vélo d'appartement STRIALE VPS 230-2,
-parfaitement fonctionnelle jusqu'au 10 avril courant. Quand l'embout d'alimentation, inséré dans la velo, a été accidentellement cassé / cissailler , le fil arraché, le tout en chargement sur secteur. L'utilisation d'un autre chargeur, n'a rien donné, la console est toujours éteinte. Le chargeur original à pour output: 6v 500mA 3VA , l'autre 6v 500mA, mais sans mention de 3VA.
-Cette dernière manoeuvre était le maximum des mes compétences.
-Un conseil, une orientation me serait très utile.
-Vous remercie par avance
-V M
+J'ai acheté un tacx vortex Smart 2014 d'un particulier et ce dernier fonctionnait à l'achat. Je l'ai installé chez moi et je n'arrive pas à faire le calibrage.
+
+La résistance a bien été mise et la pression dans mon pneu ne dépasse pas 100psi. J'ai connecté le Smart trainer et la lumière verte clignote. J'ai installé l'application tacx et elle reconnait mon smart trainer par Bluetooth. Mais lorsque je pédale, la vitesse n'apparaît pas. J'ai essayer de faire le calibrage mais lorsque je pédale, le trainer ne le reconnait pas. J'ai essayé l'application sur iPad, iphone, Mac et sur téléphone Android.
+
+Je ne sais plus quoi essayer.
+
+Merci énormément !!
