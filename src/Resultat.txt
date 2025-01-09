@@ -1,0 +1,237 @@
+###### Segmentation en token : RESULTAT #############
+
+
+	STANZA
+---
+------
+
+PHRASE 1 -> TACX vortex Smart calibrage impossible
+------
+1 - TACX
+2 - vortex
+3 - Smart
+4 - calibrage
+5 - impossible
+------
+
+PHRASE 2 -> Marque : Tacx
+------
+1 - Marque
+2 - :
+3 - Tacx
+------
+
+PHRASE 3 -> Modèle : TACX VORTEX SMART
+------
+1 - Modèle
+2 - :
+3 - TACX
+4 - VORTEX
+5 - SMART
+------
+
+PHRASE 4 -> Année : 2014
+------
+1 - Année
+2 - :
+3 - 2014
+------
+
+PHRASE 5 -> Question posée par Amylie M 1 pt
+------
+1 - Question
+2 - posée
+3 - par
+4 - Amylie
+5 - M
+6 - 1
+7 - pt
+------
+
+PHRASE 6 -> Le 20 Jan 2019 - 00h05
+------
+1 - Le
+2 - 20
+3 - Jan
+4 - 2019
+5 - -
+6 - 00h05
+------
+
+PHRASE 7 -> Bonjour,
+J'ai acheté un tacx vortex Smart 2014 d'un particulier et ce dernier fonctionnait à l'achat.
+------
+1 - Bonjour
+2 - ,
+3 - J'
+4 - ai
+5 - acheté
+6 - un
+7 - tacx
+8 - vortex
+9 - Smart
+10 - 2014
+11 - d'
+12 - un
+13 - particulier
+14 - et
+15 - ce
+16 - dernier
+17 - fonctionnait
+18 - à
+19 - l'
+20 - achat
+21 - .
+------
+
+PHRASE 8 -> Je l'ai installé chez moi et je n'arrive pas à faire le calibrage.
+------
+1 - Je
+2 - l'
+3 - ai
+4 - installé
+5 - chez
+6 - moi
+7 - et
+8 - je
+9 - n'
+10 - arrive
+11 - pas
+12 - à
+13 - faire
+14 - le
+15 - calibrage
+16 - .
+------
+
+PHRASE 9 -> La résistance a bien été mise et la pression dans mon pneu ne dépasse pas 100psi.
+------
+1 - La
+2 - résistance
+3 - a
+4 - bien
+5 - été
+6 - mise
+7 - et
+8 - la
+9 - pression
+10 - dans
+11 - mon
+12 - pneu
+13 - ne
+14 - dépasse
+15 - pas
+16 - 100psi
+17 - .
+------
+
+PHRASE 10 -> J'ai connecté le Smart trainer et la lumière verte clignote.
+------
+1 - J'
+2 - ai
+3 - connecté
+4 - le
+5 - Smart
+6 - trainer
+7 - et
+8 - la
+9 - lumière
+10 - verte
+11 - clignote
+12 - .
+------
+
+PHRASE 11 -> J'ai installé l'application tacx et elle reconnait mon smart trainer par Bluetooth.
+------
+1 - J'
+2 - ai
+3 - installé
+4 - l'
+5 - application
+6 - tacx
+7 - et
+8 - elle
+9 - reconnait
+10 - mon
+11 - smart
+12 - trainer
+13 - par
+14 - Bluetooth
+15 - .
+------
+
+PHRASE 12 -> Mais lorsque je pédale, la vitesse n'apparaît pas.
+------
+1 - Mais
+2 - lorsque
+3 - je
+4 - pédale
+5 - ,
+6 - la
+7 - vitesse
+8 - n'
+9 - apparaît
+10 - pas
+11 - .
+------
+
+PHRASE 13 -> J'ai essayer de faire le calibrage mais lorsque je pédale, le trainer ne le reconnait pas.
+------
+1 - J'
+2 - ai
+3 - essayer
+4 - de
+5 - faire
+6 - le
+7 - calibrage
+8 - mais
+9 - lorsque
+10 - je
+11 - pédale
+12 - ,
+13 - le
+14 - trainer
+15 - ne
+16 - le
+17 - reconnait
+18 - pas
+19 - .
+------
+
+PHRASE 14 -> J'ai essayé l'application sur iPad, iphone, Mac et sur téléphone Android.
+------
+1 - J'
+2 - ai
+3 - essayé
+4 - l'
+5 - application
+6 - sur
+7 - iPad
+8 - ,
+9 - iphone
+10 - ,
+11 - Mac
+12 - et
+13 - sur
+14 - téléphone
+15 - Android
+16 - .
+------
+
+PHRASE 15 -> Je ne sais plus quoi essayer.
+------
+1 - Je
+2 - ne
+3 - sais
+4 - plus
+5 - quoi
+6 - essayer
+7 - .
+------
+
+PHRASE 16 -> Merci énormément !!
+------
+1 - Merci
+2 - énormément
+3 - !
+4 - !
