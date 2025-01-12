@@ -94,4 +94,12 @@ def lemmatization(text):
 with open("message.txt", "r", encoding="UTF-8") as file:
     holding = file.read()
     lemmatization(holding)
+
+# * EXTRACTION DU FICHIER CORPUS
 # %%
+
+with open("cocorep-velo.txt", "r", encoding="UTF-8") as file:
+    text = file.read()
+    st = nlpStanza(text)
+    for phrase in st.sentences:
+        print(phrase)

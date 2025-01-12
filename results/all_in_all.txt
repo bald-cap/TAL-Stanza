@@ -36,22 +36,22 @@ SENTENCE 2 - Je l'ai installé chez moi et je n'arrive pas à faire le calibrage
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    Je                  moi                 PRON                4(installé)         nsubj          
-2    l'                  lui                 PRON                4(installé)         obj            
-3    ai                  avoir               AUX                 4(installé)         aux:tense      
-4    installé            installer           VERB                0(ROOT)             root           
-5    chez                chez                ADP                 6(moi)              case           
-6    moi                 moi                 PRON                4(installé)         obl:mod        
-7    et                  et                  CCONJ               10(arrive)          cc             
-8    je                  moi                 PRON                10(arrive)          nsubj          
-9    n'                  ne                  ADV                 10(arrive)          advmod         
-10   arrive              arriver             VERB                4(installé)         conj           
-11   pas                 pas                 ADV                 10(arrive)          advmod         
-12   à                   à                   ADP                 13(faire)           mark           
-13   faire               faire               VERB                10(arrive)          xcomp          
-14   le                  le                  DET                 15(calibrage)       det            
-15   calibrage           calibrage           NOUN                13(faire)           obj            
-16   .                   .                   PUNCT               4(installé)         punct          
+22   Je                  moi                 PRON                4(installé)         nsubj          
+23   l'                  lui                 PRON                4(installé)         obj            
+24   ai                  avoir               AUX                 4(installé)         aux:tense      
+25   installé            installer           VERB                0(ROOT)             root           
+26   chez                chez                ADP                 6(moi)              case           
+27   moi                 moi                 PRON                4(installé)         obl:mod        
+28   et                  et                  CCONJ               10(arrive)          cc             
+29   je                  moi                 PRON                10(arrive)          nsubj          
+30   n'                  ne                  ADV                 10(arrive)          advmod         
+31   arrive              arriver             VERB                4(installé)         conj           
+32   pas                 pas                 ADV                 10(arrive)          advmod         
+33   à                   à                   ADP                 13(faire)           mark           
+34   faire               faire               VERB                10(arrive)          xcomp          
+35   le                  le                  DET                 15(calibrage)       det            
+36   calibrage           calibrage           NOUN                13(faire)           obj            
+37   .                   .                   PUNCT               4(installé)         punct          
 
 -----------------------------------
 
@@ -60,23 +60,23 @@ SENTENCE 3 - La résistance a bien été mise et la pression dans mon pneu ne d�
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    La                  le                  DET                 2(résistance)       det            
-2    résistance          résistance          NOUN                6(mise)             nsubj:pass     
-3    a                   avoir               AUX                 6(mise)             aux:tense      
-4    bien                bien                ADV                 6(mise)             advmod         
-5    été                 être                AUX                 6(mise)             aux:pass       
-6    mise                mettre              VERB                0(ROOT)             root           
-7    et                  et                  CCONJ               14(dépasse)         cc             
-8    la                  le                  DET                 9(pression)         det            
-9    pression            pression            NOUN                14(dépasse)         nsubj          
-10   dans                dans                ADP                 12(pneu)            case           
-11   mon                 son                 DET                 12(pneu)            det            
-12   pneu                pneu                NOUN                9(pression)         nmod           
-13   ne                  ne                  ADV                 14(dépasse)         advmod         
-14   dépasse             dépasser            VERB                6(mise)             conj           
-15   pas                 pas                 ADV                 14(dépasse)         advmod         
-16   100psi              100psi              NUM                 14(dépasse)         obj            
-17   .                   .                   PUNCT               6(mise)             punct          
+38   La                  le                  DET                 2(résistance)       det            
+39   résistance          résistance          NOUN                6(mise)             nsubj:pass     
+40   a                   avoir               AUX                 6(mise)             aux:tense      
+41   bien                bien                ADV                 6(mise)             advmod         
+42   été                 être                AUX                 6(mise)             aux:pass       
+43   mise                mettre              VERB                0(ROOT)             root           
+44   et                  et                  CCONJ               14(dépasse)         cc             
+45   la                  le                  DET                 9(pression)         det            
+46   pression            pression            NOUN                14(dépasse)         nsubj          
+47   dans                dans                ADP                 12(pneu)            case           
+48   mon                 son                 DET                 12(pneu)            det            
+49   pneu                pneu                NOUN                9(pression)         nmod           
+50   ne                  ne                  ADV                 14(dépasse)         advmod         
+51   dépasse             dépasser            VERB                6(mise)             conj           
+52   pas                 pas                 ADV                 14(dépasse)         advmod         
+53   100psi              100psi              NUM                 14(dépasse)         obj            
+54   .                   .                   PUNCT               6(mise)             punct          
 
 -----------------------------------
 
@@ -85,18 +85,18 @@ SENTENCE 4 - J'ai connecté le Smart trainer et la lumière verte clignote.
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    J'                  moi                 PRON                3(connecté)         nsubj          
-2    ai                  avoir               AUX                 3(connecté)         aux:tense      
-3    connecté            connecter           VERB                0(ROOT)             root           
-4    le                  le                  DET                 5(Smart)            det            
-5    Smart               Smart               PROPN               3(connecté)         obj            
-6    trainer             trainer             X                   5(Smart)            flat:name      
-7    et                  et                  CCONJ               11(clignote)        cc             
-8    la                  le                  DET                 9(lumière)          det            
-9    lumière             lumière             NOUN                11(clignote)        nsubj          
-10   verte               vert                ADJ                 9(lumière)          amod           
-11   clignote            clignoter           VERB                3(connecté)         conj           
-12   .                   .                   PUNCT               3(connecté)         punct          
+55   J'                  moi                 PRON                3(connecté)         nsubj          
+56   ai                  avoir               AUX                 3(connecté)         aux:tense     
+57   connecté            connecter           VERB                0(ROOT)             root            
+58   le                  le                  DET                 5(Smart)            det            
+59   Smart               Smart               PROPN               3(connecté)         obj            
+60   trainer             trainer             X                   5(Smart)            flat:name      
+61   et                  et                  CCONJ               11(clignote)        cc             
+62   la                  le                  DET                 9(lumière)          det            
+63   lumière             lumière             NOUN                11(clignote)        nsubj          
+64   verte               vert                ADJ                 9(lumière)          amod           
+65   clignote            clignoter           VERB                3(connecté)         conj           
+66   .                   .                   PUNCT               3(connecté)         punct          
 
 -----------------------------------
 
@@ -105,21 +105,21 @@ SENTENCE 5 - J'ai installé l'application tacx et elle reconnait mon smart train
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    J'                  moi                 PRON                3(installé)         nsubj          
-2    ai                  avoir               AUX                 3(installé)         aux:tense      
-3    installé            installer           VERB                0(ROOT)             root           
-4    l'                  le                  DET                 5(application)      det            
-5    application         application         NOUN                3(installé)         obj            
-6    tacx                tacx                NOUN                5(application)      appos          
-7    et                  et                  CCONJ               9(reconnait)        cc             
-8    elle                lui                 PRON                9(reconnait)        nsubj          
-9    reconnait           reconnaître         VERB                3(installé)         conj           
-10   mon                 son                 DET                 11(smart)           det            
-11   smart               smart               NOUN                9(reconnait)        obj            
-12   trainer             trainer             VERB                9(reconnait)        xcomp          
-13   par                 par                 ADP                 14(Bluetooth)       case           
-14   Bluetooth           Bluetooth           PROPN               12(trainer)         obl:agent      
-15   .                   .                   PUNCT               3(installé)         punct          
+67   J'                  moi                 PRON                3(installé)         nsubj          
+68   ai                  avoir               AUX                 3(installé)         aux:tense      
+69   installé            installer           VERB                0(ROOT)             root           
+70   l'                  le                  DET                 5(application)      det            
+71   application         application         NOUN                3(installé)         obj            
+72   tacx                tacx                NOUN                5(application)      appos          
+73   et                  et                  CCONJ               9(reconnait)        cc             
+74   elle                lui                 PRON                9(reconnait)        nsubj          
+75   reconnait           reconnaître         VERB                3(installé)         conj           
+76   mon                 son                 DET                 11(smart)           det            
+77   smart               smart               NOUN                9(reconnait)        obj            
+78   trainer             trainer             VERB                9(reconnait)        xcomp          
+79   par                 par                 ADP                 14(Bluetooth)       case           
+80   Bluetooth           Bluetooth           PROPN               12(trainer)         obl:agent      
+81   .                   .                   PUNCT               3(installé)         punct          
 
 -----------------------------------
 
@@ -128,17 +128,17 @@ SENTENCE 6 - Mais lorsque je pédale, la vitesse n'apparaît pas.
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    Mais                mais                CCONJ               9(apparaît)         cc             
-2    lorsque             lorsque             SCONJ               4(pédale)           mark           
-3    je                  moi                 PRON                4(pédale)           nsubj          
-4    pédale              pédaler             VERB                9(apparaît)         advcl          
-5    ,                   ,                   PUNCT               4(pédale)           punct          
-6    la                  le                  DET                 7(vitesse)          det            
-7    vitesse             vitesse             NOUN                9(apparaît)         nsubj          
-8    n'                  ne                  ADV                 9(apparaît)         advmod         
-9    apparaît            apparaître          VERB                0(ROOT)             root           
-10   pas                 pas                 ADV                 9(apparaît)         advmod         
-11   .                   .                   PUNCT               9(apparaît)         punct          
+82   Mais                mais                CCONJ               9(apparaît)         cc             
+83   lorsque             lorsque             SCONJ               4(pédale)           mark           
+84   je                  moi                 PRON                4(pédale)           nsubj          
+85   pédale              pédaler             VERB                9(apparaît)         advcl          
+86   ,                   ,                   PUNCT               4(pédale)           punct          
+87   la                  le                  DET                 7(vitesse)          det            
+88   vitesse             vitesse             NOUN                9(apparaît)         nsubj          
+89   n'                  ne                  ADV                 9(apparaît)         advmod         
+90   apparaît            apparaître          VERB                0(ROOT)             root           
+91   pas                 pas                 ADV                 9(apparaît)         advmod         
+92   .                   .                   PUNCT               9(apparaît)         punct          
 
 -----------------------------------
 
@@ -147,25 +147,25 @@ SENTENCE 7 - J'ai essayer de faire le calibrage mais lorsque je pédale, le trai
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    J'                  moi                 PRON                3(essayer)          nsubj          
-2    ai                  avoir               AUX                 3(essayer)          aux:tense      
-3    essayer             essayer             VERB                0(ROOT)             root           
-4    de                  de                  ADP                 5(faire)            mark           
-5    faire               faire               VERB                3(essayer)          xcomp          
-6    le                  le                  DET                 7(calibrage)        det            
-7    calibrage           calibrage           NOUN                5(faire)            obj            
-8    mais                mais                CCONJ               17(reconnait)       cc             
-9    lorsque             lorsque             SCONJ               11(pédale)          mark           
-10   je                  moi                 PRON                11(pédale)          nsubj          
-11   pédale              pédaler             VERB                17(reconnait)       advcl          
-12   ,                   ,                   PUNCT               11(pédale)          punct          
-13   le                  le                  DET                 14(trainer)         det            
-14   trainer             trainer             NOUN                17(reconnait)       nsubj          
-15   ne                  ne                  ADV                 17(reconnait)       advmod         
-16   le                  lui                 PRON                17(reconnait)       obj            
-17   reconnait           reconnaître         VERB                3(essayer)          conj           
-18   pas                 pas                 ADV                 17(reconnait)       advmod         
-19   .                   .                   PUNCT               3(essayer)          punct          
+93   J'                  moi                 PRON                3(essayer)          nsubj          
+94   ai                  avoir               AUX                 3(essayer)          aux:tense      
+95   essayer             essayer             VERB                0(ROOT)             root           
+96   de                  de                  ADP                 5(faire)            mark           
+97   faire               faire               VERB                3(essayer)          xcomp          
+98   le                  le                  DET                 7(calibrage)        det            
+99   calibrage           calibrage           NOUN                5(faire)            obj            
+100  mais                mais                CCONJ               17(reconnait)       cc             
+101  lorsque             lorsque             SCONJ               11(pédale)          mark           
+102  je                  moi                 PRON                11(pédale)          nsubj          
+103  pédale              pédaler             VERB                17(reconnait)       advcl          
+104  ,                   ,                   PUNCT               11(pédale)          punct          
+105  le                  le                  DET                 14(trainer)         det            
+106  trainer             trainer             NOUN                17(reconnait)       nsubj          
+107  ne                  ne                  ADV                 17(reconnait)       advmod         
+108  le                  lui                 PRON                17(reconnait)       obj            
+109  reconnait           reconnaître         VERB                3(essayer)          conj           
+110  pas                 pas                 ADV                 17(reconnait)       advmod         
+111  .                   .                   PUNCT               3(essayer)          punct          
 
 -----------------------------------
 
@@ -174,22 +174,22 @@ SENTENCE 8 - J'ai essayé l'application sur iPad, iphone, Mac et sur téléphone
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    J'                  moi                 PRON                3(essayé)           nsubj          
-2    ai                  avoir               AUX                 3(essayé)           aux:tense      
-3    essayé              essayer             VERB                0(ROOT)             root           
-4    l'                  le                  DET                 5(application)      det            
-5    application         application         NOUN                3(essayé)           obj            
-6    sur                 sur                 ADP                 7(iPad)             case           
-7    iPad                iPad                PROPN               5(application)      nmod           
-8    ,                   ,                   PUNCT               9(iphone)           punct          
-9    iphone              iphone              NOUN                7(iPad)             conj           
-10   ,                   ,                   PUNCT               11(Mac)             punct          
-11   Mac                 Mac                 PROPN               7(iPad)             conj           
-12   et                  et                  CCONJ               14(téléphone)       cc             
-13   sur                 sur                 ADP                 14(téléphone)       case           
-14   téléphone           téléphone           NOUN                7(iPad)             conj           
-15   Android             Android             PROPN               14(téléphone)       appos          
-16   .                   .                   PUNCT               3(essayé)           punct          
+112  J'                  moi                 PRON                3(essayé)           nsubj          
+113  ai                  avoir               AUX                 3(essayé)           aux:tense      
+114  essayé              essayer             VERB                0(ROOT)             root           
+115  l'                  le                  DET                 5(application)      det            
+116  application         application         NOUN                3(essayé)           obj            
+117  sur                 sur                 ADP                 7(iPad)             case           
+118  iPad                iPad                PROPN               5(application)      nmod           
+119  ,                   ,                   PUNCT               9(iphone)           punct          
+120  iphone              iphone              NOUN                7(iPad)             conj           
+121  ,                   ,                   PUNCT               11(Mac)             punct          
+122  Mac                 Mac                 PROPN               7(iPad)             conj           
+123  et                  et                  CCONJ               14(téléphone)       cc             
+124  sur                 sur                 ADP                 14(téléphone)       case           
+125  téléphone           téléphone           NOUN                7(iPad)             conj           
+126  Android             Android             PROPN               14(téléphone)       appos          
+127  .                   .                   PUNCT               3(essayé)           punct          
 
 -----------------------------------
 
@@ -198,13 +198,13 @@ SENTENCE 9 - Je ne sais plus quoi essayer.
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    Je                  moi                 PRON                3(sais)             nsubj          
-2    ne                  ne                  ADV                 3(sais)             advmod         
-3    sais                savoir              VERB                0(ROOT)             root           
-4    plus                plus                ADV                 3(sais)             advmod         
-5    quoi                quoi                PRON                6(essayer)          obj            
-6    essayer             essayer             VERB                3(sais)             xcomp          
-7    .                   .                   PUNCT               3(sais)             punct          
+128  Je                  moi                 PRON                3(sais)             nsubj          
+129  ne                  ne                  ADV                 3(sais)             advmod         
+130  sais                savoir              VERB                0(ROOT)             root           
+131  plus                plus                ADV                 3(sais)             advmod         
+132  quoi                quoi                PRON                6(essayer)          obj            
+133  essayer             essayer             VERB                3(sais)             xcomp          
+134  .                   .                   PUNCT               3(sais)             punct          
 
 -----------------------------------
 
@@ -213,9 +213,9 @@ SENTENCE 10 - Merci énormément !!
 ANALYSE 
 ----
 ID   TEXT                LEMMA               PART OF SPEECH      HEAD                DEP REL        
-1    Merci               merci               INTJ                0(ROOT)             root           
-2    énormément          énormément          ADV                 1(Merci)            advmod         
-3    !                   !                   PUNCT               1(Merci)            punct          
-4    !                   !                   PUNCT               1(Merci)            punct          
+135  Merci               merci               INTJ                0(ROOT)             root           
+136  énormément          énormément          ADV                 1(Merci)            advmod         
+137  !                   !                   PUNCT               1(Merci)            punct          
+138  !                   !                   PUNCT               1(Merci)            punct          
 
 -----------------------------------
