@@ -1,22 +1,60 @@
 
 # %%
 import stanza
+import re
 from collections import Counter
-
 nlpStanza=stanza.Pipeline("fr")
 
 
-# * EXTRACTION DU FICHIER CORPUS
 # %%
+# * 3.1.1. Nombre de phrases
+# ? EXTRACTION ET AFFICHAGE DE CHAQUE PHRASE DU FICHIER CORCOREP-VELO.TXT
 with open("src\cocorep-velo.txt", "r", encoding="UTF-8") as file:
     text_velo = file.read()
     st_velo = nlpStanza(text_velo)
+    num_phrase = 0
     for phrase in st_velo.sentences:
-        print(phrase.text)
+        num_phrase += len(phrase.text)
+
+# Total
+print(f"Le texte a {num_phrase} phrases en total")
 
 
 # %%
-# Fonction pour extraire les informations sur les vélos
+# * 3.1.2. Nombre moyen de phrases par message
+# ? CALCUL ET AFFICHAGE DE LA MOYENNE NOMBRE DE PHRASES PAR MESSAGES SEPARES PAR DES LIENS HTTPS.
+def segmenter_messages(texte):
+    return re.split(r"<.*?>", texte)
+
+with open("src/cocorep-velo.txt", "r", encoding="UTF-8") as file:
+    raw_text = file.read()
+    messages = segmenter_messages(raw_text)
+    messages = [msg.strip() for msg in messages if msg.strip()]
+
+def compter_phrases_par_message(messages):
+    phrase_counts = []
+    for msg in messages:
+        st = nlpStanza(msg)
+        phrase_counts.append(len(st.sentences))
+    return phrase_counts
+
+nombre_phrases_par_message = compter_phrases_par_message(messages)
+
+# Calcul
+def calculer_moyenne(liste):
+
+    if not liste:
+        return 0
+    return sum(liste) / len(liste)
+
+moyenne_phrases_par_message = calculer_moyenne(nombre_phrases_par_message)
+
+# Affichage
+print(f"Nombre moyen de phrases par message : {moyenne_phrases_par_message:.2f}")
+
+# %%
+# * 3.2.a. Types de vélo mentionnés
+# ? CALCUL DE LA FREQUENCE DES MOTS/ SYNONYMES DE "VELO"
 def extraire_infos_velo(st):
     mots_velo_freq = {}
     types_velo_freq = {}
@@ -35,20 +73,22 @@ def extraire_infos_velo(st):
                         types_velo_freq[type_velo] = types_velo_freq.get(type_velo, 0) + 1
     return mots_velo_freq, types_velo_freq
 
-# Appeler la fonction pour extraire les informations sur les vélos
+# Appel
 mots_velo_freq, types_velo_freq = extraire_infos_velo(st_velo)
 
-# Afficher les résultats
+# Affichage
 print("Mots utilisés pour désigner un vélo et leur fréquence :")
 for mot_pos, freq in mots_velo_freq.items():
     print(f"{mot_pos}: {freq}")
 
 print("\nTypes de vélo mentionnés et leur fréquence :")
 for type_velo, freq in types_velo_freq.items():
-    print(f"{type_velo}: {freq}")
+    print(f"\t{type_velo}: {freq}")
 
 
 # %%
+# * 3.1.11 Couple NOUN-VERB le plus fréquent tel que :
+# ? CALCUL ET AFFICHAGE DU "NOUN-VERB" LE PLUS FREQUENT
 def analyser_couples_noun_verb(st):
 
     couples_noun_verb =[]
@@ -63,16 +103,14 @@ def analyser_couples_noun_verb(st):
                 couples_noun_verb.append((word.text, sent.words[word.head - 1].text))
     return couples_noun_verb
 
-# Lire le texte depuis le fichier
-
-# Appeler la fonction d'analyse et obtenir les couples NOUN-VERB
+# Appel
 couples_noun_verb = analyser_couples_noun_verb(st_velo)
 
-# Calculer la fréquence des couples NOUN-VERB
+# Calcul
 frequence_couples = Counter(couples_noun_verb)
 
-# Afficher les 5 couples NOUN-VERB les plus fréquents
-nombre_affichage = 5
+# Affichage
+nombre_affichage = 1
 print(f"Les {nombre_affichage} couples NOUN-VERB les plus fréquents :")
 for couple, frequence in frequence_couples.most_common(nombre_affichage):
     print(f"{couple}: {frequence} fois")
@@ -80,6 +118,8 @@ for couple, frequence in frequence_couples.most_common(nombre_affichage):
 
 
 # %%
+# * 3.1.10. Lemmes des 5 verbes les plus fréquents
+# ? CALCUL ET AFFICHAGE DES LEMMES DES 5 VERBES VERBES LE PLUS FREQUENTS
 def compter_lemmes_verbes(st):
 
     lemmes_verbes = Counter()
@@ -92,14 +132,15 @@ def compter_lemmes_verbes(st):
 
 resultat_verbes = compter_lemmes_verbes(st_velo)
 
-# Afficher les 5 lemmes des verbes les plus fréquents
+# Affichage
 print("Les 5 lemmes des verbes les plus fréquents sont :")
 for lemme, count in resultat_verbes:
     print(f"{lemme}: {count} fois")
 
 
 # %%
-# Fonction pour compter les lemmes des adjectifs
+# * 3.1.8. Lemmes des 5 adjectifs les plus fréquents
+# ? CALCUL ET AFFICHAGE DES 5 ADJECTIFS LE PLUS FREQUENT DANS LE TEXTE
 def compter_lemmes_adjectifs(st):
 
     lemmes_adjectifs = Counter()
@@ -110,16 +151,17 @@ def compter_lemmes_adjectifs(st):
 
     return lemmes_adjectifs.most_common(5)
 
-# Appeler la fonction d'analyse et de comptage des lemmes des adjectifs
+# Appel
 resultat_adjectifs = compter_lemmes_adjectifs(st_velo)
 
-# Afficher les 5 lemmes des adjectifs les plus fréquents
+# Affichage
 print("Les 5 lemmes des adjectifs les plus fréquents sont :")
 for lemme, count in resultat_adjectifs:
     print(f"{lemme}: {count} fois")
 
 # %%
-# Fonction pour compter les lemmes des noms communs
+# * 3.1.6. Lemmes des 5 noms communs les plus fréquents
+# ? CALCUL ET AFFICHAGE DES LEMMES DES 5 NOMS COMMUNS LE PLUS FREQUENTS
 def compter_lemmes_noms_communs(st):
 
     lemmes_noms_communs = Counter()
@@ -130,21 +172,22 @@ def compter_lemmes_noms_communs(st):
 
     return lemmes_noms_communs.most_common(5)
 
-# Appeler la fonction d'analyse et de comptage des lemmes des noms communs
+# Appel
 resultat_noms_communs = compter_lemmes_noms_communs(st_velo)
 
-# Afficher les 5 lemmes des noms communs les plus fréquents
+# Affichage
 print("Les 5 lemmes des noms communs les plus fréquents sont :")
 for lemme, count in resultat_noms_communs:
     print(f"{lemme}: {count} fois")
 
 # %%
-# Fonction pour analyser le texte et compter les noms communs
+# * 3.1.4. Nombre de noms communs (pos = NOUN) 
+# ? CALCUL ET AFFICHAGE DU NOMBRE TOTAL DE NOMS COMMUNS 
 def compter_noms_communs(st):
     return sum(1 for sent in st.sentences for word in sent.words if word.pos == 'NOUN')
 
-# Appeler la fonction pour compter les noms communs
+# Appel
 nombre_noms_communs = compter_noms_communs(st_velo)
 
-# Afficher le résultat
+# Affichage
 print(f"Le nombre de mots avec POS 'NOUN' dans l'analyse syntaxique est : {nombre_noms_communs}")
