@@ -194,11 +194,12 @@ def compter_lemmes_adjectifs(st):
         for word in sent.words:
             if word.pos == 'ADJ':
                 lemmes_adjectifs[word.lemma] += 1
-
+    
     return lemmes_adjectifs.most_common(5)
 
 # Appeler la fonction d'analyse et de comptage des lemmes des adjectifs
 resultat_adjectifs = compter_lemmes_adjectifs(st_velo)
+
 
 # Afficher les 5 lemmes des adjectifs les plus fréquents
 print("Les 5 lemmes des adjectifs les plus fréquents sont :")
@@ -235,3 +236,27 @@ nombre_noms_communs = compter_noms_communs(st_velo)
 
 # Afficher le résultat
 print(f"Le nombre de mots avec POS 'NOUN' dans l'analyse syntaxique est : {nombre_noms_communs}")
+#%%
+#!! compter le nombre d'adjectifs
+def compter_adjectifs(st):
+    return sum(1 for sent in st.sentences for word in sent.words if word.pos == 'ADJ')
+
+nbAdj = compter_adjectifs(st_velo)
+print (f"le nombre total des adjectifs est:{nbAdj}")
+
+
+#%%
+#!! compter nombre de verbes
+def compter_verbes(st):
+    return sum(1 for sent in st.sentences for word in sent.words if word.pos == 'VERB' or word.pos = 'AUX')
+
+nbVerb = compter_verbes(st_velo)
+print (f"le nombre total de verbes est égal à:{nbVerb}")
+
+
+#%%
+# nombre de mots 
+
+
+#%%moyenne de nombre de mots par phrase
+
