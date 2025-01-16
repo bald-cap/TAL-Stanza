@@ -191,3 +191,70 @@ nombre_noms_communs = compter_noms_communs(st_velo)
 
 # Affichage
 print(f"Le nombre de mots avec POS 'NOUN' dans l'analyse syntaxique est : {nombre_noms_communs}")
+
+#%%
+#compter le nombre d'adjectifs
+def compter_adjectifs(st):
+    return sum(1 for sent in st.sentences for word in sent.words if word.pos == 'ADJ')
+
+nbAdj = compter_adjectifs(st_velo)
+print (f"le nombre total des adjectifs est:{nbAdj}")
+
+
+#%%
+#compter nombre de verbes
+def compter_verbes(st):
+    return sum(1 for sent in st.sentences for word in sent.words if word.pos == 'VERB' or word.pos == 'AUX')
+
+nbVerb = compter_verbes(st_velo)
+print (f"le nombre total de verbes est égal à:{nbVerb}")
+
+
+#%%
+# !!!mots synonymes de velo et leur fréquence
+def extraire_infos_velo(st):
+    mots_velo_freq = {}
+    for sent in st.sentences:
+        for word in sent.words:
+            # Vérifier si le mot est un nom et correspond à un vélo ou une bicyclette
+            if word.pos == "NOUN" and ("vélo" in word.text.lower() or "bicyclette" in word.text.lower()):
+                mot_pos = f"{word.text.lower()} ({word.pos})"
+                mots_velo_freq[mot_pos] = mots_velo_freq.get(mot_pos, 0) + 1
+    return mots_velo_freq
+
+# Appeler la fonction pour extraire les mots désignant un vélo et leur fréquence
+mots_velo_freq = extraire_infos_velo(st_velo)
+
+# Afficher les résultats des mots désignant un vélo
+print("Mots utilisés pour désigner un vélo et leur fréquence :")
+for mot_pos, freq in mots_velo_freq.items():
+    print(f"{mot_pos}: {freq}")
+
+
+
+#%% 
+# !!!types de vélos et leur fréquence
+def extraire_types_velo(st):
+    types_velo_freq = Counter()
+    
+    for sent in st.sentences:
+        for word in sent.words:
+            # Vérifier si le mot est un nom et correspond à un vélo ou une bicyclette
+            if word.pos == "NOUN" and ("vélo" in word.text.lower() or "bicyclette" in word.text.lower()):
+                mot_pos = f"{word.text.lower()} ({word.pos})"
+                types_velo_freq[mot_pos] += 1
+                for child in sent.words:
+                    # Vérifier la relation dépendante (amod ou compound) et le POS du mot enfant
+                    if child.head == word.id and child.pos in ["NOUN", "ADJ"] and child.deprel in ["amod", "compound"]:
+                        type_velo = f"{child.lemma.lower()} ({child.pos})"
+                        types_velo_freq[type_velo] += 1
+
+    return types_velo_freq
+
+# Appeler la fonction pour extraire les types de vélos et leur fréquence
+types_velo_freq = extraire_types_velo(st_velo)
+
+# Afficher les résultats des types de vélos mentionnés
+print("\nTypes de vélo mentionnés et leur fréquence :")
+for type_velo, freq in types_velo_freq.items():
+    print(f"{type_velo}: {freq}")
