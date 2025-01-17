@@ -5,19 +5,17 @@ import re
 from collections import Counter
 nlpStanza=stanza.Pipeline("fr")
 
-
 # %%
 # * 3.1.1. Nombre de phrases
 # ? EXTRACTION ET AFFICHAGE DE CHAQUE PHRASE DU FICHIER CORCOREP-VELO.TXT
-with open("src\cocorep-velo.txt", "r", encoding="UTF-8") as file:
-    text_velo = file.read()
-    st_velo = nlpStanza(text_velo)
-    num_phrase = 0
-    for phrase in st_velo.sentences:
-        num_phrase += len(phrase.text)
-
-# Total
-print(f"Le texte a {num_phrase} phrases en total")
+with open("cocorep-velo.txt", encoding="UTF-8") as entree:
+    corpus = entree.read() 
+    st = nlpStanza(corpus)
+    num_phrases = 0    
+    # Compter le nombre de phrases
+    num_phrases += len(st.sentences)  
+    print ("\n---\n".join([x.text for x in st.sentences]) + "\n---")
+print("Nombre de phrases :", num_phrases)
 
 
 # %%
@@ -26,7 +24,7 @@ print(f"Le texte a {num_phrase} phrases en total")
 def segmenter_messages(texte):
     return re.split(r"<.*?>", texte)
 
-with open("src/cocorep-velo.txt", "r", encoding="UTF-8") as file:
+with open("cocorep-velo.txt", "r", encoding="UTF-8") as file:
     raw_text = file.read()
     messages = segmenter_messages(raw_text)
     messages = [msg.strip() for msg in messages if msg.strip()]
